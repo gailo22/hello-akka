@@ -1,7 +1,10 @@
+package hello.java;
+import hello.java.HelloAkkaJava;
 import scala.concurrent.duration.Duration;
 import akka.actor.*;
 import akka.testkit.JavaTestKit;
 import akka.testkit.TestActorRef;
+
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
