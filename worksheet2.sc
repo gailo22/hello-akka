@@ -5,11 +5,11 @@ object worksheet2 {
   
   val system = ActorSystem("Barista")             //> system  : akka.actor.ActorSystem = akka://Barista
   val barista = system.actorOf(Props[Barista], "Barista")
-                                                  //> barista  : akka.actor.ActorRef = Actor[akka://Barista/user/Barista#-12285440
-                                                  //| 55]
+                                                  //> barista  : akka.actor.ActorRef = Actor[akka://Barista/user/Barista#224484658
+                                                  //| ]
   val customer = system.actorOf(Props(classOf[Customer], barista), "Customer")
-                                                  //> customer  : akka.actor.ActorRef = Actor[akka://Barista/user/Customer#-434024
-                                                  //| 470]
+                                                  //> customer  : akka.actor.ActorRef = Actor[akka://Barista/user/Customer#1702913
+                                                  //| 419]
   
   
   barista ! CappuccinoRequest
