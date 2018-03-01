@@ -11,7 +11,7 @@ object Hello1 extends App {
   hello ! "Bob"
   
   Thread sleep 1000
-  system shutdown
+  system terminate
   
   class Hello extends Actor {
     def receive = {

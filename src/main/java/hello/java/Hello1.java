@@ -14,7 +14,7 @@ public class Hello1 {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) { /* ignore */ }
-        system.shutdown();
+        system.terminate();
     }
 
     private static class Hello extends UntypedActor {

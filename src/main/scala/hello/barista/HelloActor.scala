@@ -33,5 +33,5 @@ object ActorsCreate extends App {
   Thread.sleep(1000)
   hiActor ! "hola"
   Thread.sleep(1000)
-  system.shutdown()  
+  system.terminate()
 }

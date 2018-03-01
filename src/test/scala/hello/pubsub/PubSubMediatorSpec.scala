@@ -22,8 +22,8 @@ class PubSubMediatorSpec extends WordSpec with Matchers with BeforeAndAfterAll {
  
   override protected def afterAll() = {
 //    Await.ready(system.terminate(), Duration.Inf)
-    system.shutdown()
-    system.awaitTermination(Duration.Inf)
+    system.terminate()
+    //system.awaitTermination(Duration.Inf)
     
     super.afterAll()
   }

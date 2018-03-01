@@ -19,7 +19,7 @@ object Hello2 extends App {
   hello ! Greet("Bob")
   
   Thread sleep 1000
-  system shutdown
+  system terminate
   
   class Hello extends Actor {
     var greeting = ""

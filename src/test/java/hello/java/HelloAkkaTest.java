@@ -22,8 +22,8 @@ public class HelloAkkaTest {
 
     @AfterClass
     public static void teardown() {
-        system.shutdown();
-        system.awaitTermination(Duration.create("10 seconds"));
+        system.terminate();
+        //system.awaitTermination(Duration.create("10 seconds"));
     }
 
     @Test

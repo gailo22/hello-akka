@@ -14,7 +14,7 @@ object Hello3 extends App {
   alice ! Greet(bob)
   
   Thread sleep 1000
-  system shutdown
+  system terminate
 
   object Greeter {
     case class Greet(peer: ActorRef)

@@ -22,7 +22,7 @@ class Barista extends Actor {
       //sender ! Bill(200)
       println("Let's prepare an espresso!")
     case ClosingTime =>
-      context.system.shutdown()
+      context.system.terminate()
   }
   
 }

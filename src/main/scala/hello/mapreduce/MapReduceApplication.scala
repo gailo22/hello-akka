@@ -24,7 +24,7 @@ object MapReduceApplication {
     master ! new Result
     
     Thread.sleep(500)
-    system.shutdown
+    system.terminate()
     println("done!")
     
   }

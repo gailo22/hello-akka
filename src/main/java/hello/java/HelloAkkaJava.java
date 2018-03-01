@@ -40,7 +40,7 @@ public class HelloAkkaJava {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // Create the 'helloakka' actor system
         final ActorSystem system = ActorSystem.create("helloakka");
 
